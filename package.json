@@ -1,0 +1,24 @@
+{
+  "name": "swiggyclone",
+  "version": "1.0.0",
+  "description": "This is swiggy clone project by Vineet",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vineettiwari1708/swiggyclone.git"
+  },
+  "keywords": [
+    "react",
+    "swiggyclone",
+    "vineet"
+  ],
+  "author": "vineet tiwari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vineettiwari1708/swiggyclone/issues"
+  },
+  "homepage": "https://github.com/vineettiwari1708/swiggyclone#readme"
+}
