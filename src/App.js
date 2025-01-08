@@ -1,21 +1,29 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import Header from "./components/Header";
-import Body from "./components/Body";
-
-const AppLayout = () => {
+import logo from "./logo.svg";
+import "./App.css";
+import Homepage from "./pages/homepage.js";
+import Registrationpage from "./pages/registrationpage.js";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Editpage from "./pages/editpage.js";
+import Userlistpage from "./pages/userlistpage.js";
+import Loginpage from "./pages/loginpage.js";
+import Profilepage from "./pages/profilepage.js";
+import Reactreduxpage from "./pages/reactreduxpage.js";
+function App() {
   return (
-    <div className="app">
-      <Header />
-      <Body />
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/registration" element={<Registrationpage />} />
+          <Route path="/login" element={<Loginpage />} />
+          <Route path="/edit/:id" element={<Editpage />} />
+          <Route path="/userlist" element={<Userlistpage />} />
+          <Route path="/profile" element={<Profilepage />} />
+          <Route path="/redux" element={<Reactreduxpage />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
-};
-// const heading=React.createElement("h1", {id:"heading"},"Vineet Tiwari");
-// console.log(heading);
+}
 
-// const jsxHeading = <h1 id="heading">My Name is Vineet Tiwari</h1>
-// console.log(jsxHeading);
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<AppLayout />);
+export default App;

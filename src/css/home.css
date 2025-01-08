@@ -1,0 +1,8 @@
+.body {
+  height: 511px;
+  font-size: larger;
+  font-weight: 800;
+  text-align: center;
+  position: 100px;
+  background-color: skyblue;
+}
